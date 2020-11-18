@@ -2,7 +2,8 @@ html, body {
 	margin: 0;
 	padding: 0;
 	min-width: 1000px;
-	font-family: Arial;
+    font-family: Arial;
+    background-color: white;
 }
 
 .blue-header{
@@ -16,10 +17,20 @@ html, body {
     color: white;
 }
 
+.fixed-container-header {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between ;
+    align-items: center;
+}
 .fixed-container {
     width: 1000px;
     margin: 0 auto;
     position: relative;
+   
 }
 
 .time{
@@ -27,52 +38,61 @@ html, body {
 }
 
 .white-header{
-    margin: 50px;
+    margin: 39px 0PX 16PX 0PX;
 }
 
-.fixed-container img {
+.img-logo img {
     float: left;
+    
 }
 
 .select select{
-    margin-top: 10px;
+    
     outline: none;
     border: none;
     width: 79px;
-    margin-left: 60px;
-    position: absolute;
+    
+    
     border-bottom-style:dashed;
     border-bottom-color: #85afda;
     border-bottom-width:1px ;
     font-size: 16px;
+    color: #85afda;
+    overflow: visible !important;
 }
 
 .weather{
     float: right;
     background-image: url(img/cloud.png);
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    padding-left: 23px;
-    margin-top: 10px;
-    margin-right: 367px;
+    background-size: 24px 20px;
+    background-repeat: no-repeat; 
+    padding-left: 25px;
+}
+.select-weather{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between ;
+    width: 50%;
 }
 
 .search{
   
-    margin-top: -25px;
+   /* margin-top: -55px;
     float: right;
     margin-left: 680px;
     position: absolute;
+    border-radius: 50px;*/
+    
 }
 
-.knopka{
+.search{
     border: 1px solid #f3f3f3;
   padding: 4px 20px 4px 24px;
   width: 254px;
-  margin: 25px;
+  
   height: 30px;
   background-color: #f3f3f3;
-  border-radius: 9px;
+  border-radius: 88px;
 }
 
 input {
@@ -238,16 +258,22 @@ ul a:last-child::after{
     margin-bottom:20px ;
 }
 
+
+.footer-menu{
+    display: inline-flex;
+}
+
+
 .footer-menu-img img{
     width: 588px;
-    height: 393px;
-    /* float: left; */
+    height: 405px;
+     /*float: left; */
     margin-top: 20px;
 }
 
 .footer-menu-img {
-    float: left;
-    position: relative;
+   /* float: left;
+    position: relative;*/
 }
 
 .footer-menu-block{
@@ -268,6 +294,9 @@ ul a:last-child::after{
     font-size: 14px;
 }
 
+.footer-text-menu{
+    padding-left: 18px;
+}
 .footer-text-menu a{
     text-decoration: none;
     color: #aaaab5;
@@ -277,6 +306,7 @@ ul a:last-child::after{
     background-color: white;
     margin-bottom: 20px;
     margin-top: 34px;
+    padding-left: 18px;
 }
 
 .time-right{
@@ -292,4 +322,7 @@ ul a:last-child::after{
 	background-image: url('img/icon-comments.png');
     background-repeat: no-repeat;
     margin-left: 21px;
+}
+.column-bottom div{
+    position: relative;
 }
